@@ -19,7 +19,7 @@ export default function AddUser() {
 
   const onSubmit = async (e) => {
     e.preventDefault();
-    await axios.post("http://localhost:8080/user/save", user);
+    await axios.post("https://filthy-play-production.up.railway.app/user/save", user);
     navigate("/");
   };
 
