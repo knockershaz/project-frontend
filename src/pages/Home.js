@@ -17,7 +17,7 @@ export default function Home() {
     }
 
     const deleteUser = async (id)=>{
-        await axios.delete(`https://filthy-play-production.up.railway.app/${id}`);
+        await axios.delete(`https://filthy-play-production.up.railway.app/user/${id}`);
         loadUser();
     }
     
