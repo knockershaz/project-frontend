@@ -5,11 +5,11 @@ import { Link, useParams } from "react-router-dom";
 export default function Home() {
     const [user,setUser] = useState([])
 
+    const { id } = useParams();
+
     useEffect(() => {
         loadUser();
     }, []);
-
-    const {id} = useParams();
 
     const loadUser= async()=>{
         const result = await axios.get("https://filthy-play-production.up.railway.app/users");
